@@ -78,7 +78,7 @@ func writeToFile(outputFile, filePath string, matchingLines []string) {
 func main() {
 	name := flag.String("n", "", "指定需要查找的文件类型，如：.txt,.text,.ini,.yaml,.yml,.php,.jsp,.java,.xml,.sql,.properties")
 	content := flag.String("c", "", "指定要查找的字段(不支持多个字段)，如：password=,jdbc:,user=,key=,ssh-,ldap:,mysqli_connect,sk-")
-	outputFile := flag.String("o", "findout.txt", "Specify output file")
+	outputFile := flag.String("o", "resout.txt", "Specify output file")
 	directory := flag.String("d", "./", "Target directory")
 	flag.Parse()
 
@@ -98,5 +98,5 @@ func main() {
 		}
 	}
 
-	fmt.Println("[!] 详细结果保存至resout.txt")
+	fmt.Println("[!] 详细结果默认保存至当前目录的resout.txt")
 }
