@@ -11,4 +11,4 @@ FindEvery -t .txt,.text,.ini,.yaml,.yml,.php,.jsp,.java,.xml,.sql,.properties -f
 
 -o 指定要保存的路径
 
-控制台会显示简略信息，详细信息请查看findout.txt
+控制台会显示简略信息，详细信息请查看resout.txt
